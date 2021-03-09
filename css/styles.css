@@ -1,0 +1,181 @@
+/* RESET  */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* END RESET */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 1rem;
+  background-color: dimgrey;
+  color: aliceblue;
+  font-size: 2rem;
+  display: flex;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding-top: 20vh;
+}
+
+/* section h1 {
+  font-size: 5rem;
+  color: aliceblue;
+}
+*/
+
+section div {
+  color: aliceblue;
+  margin: 0 auto;
+  padding: 5vh 8vw;
+  max-width: 60vw;
+}
+
+section#main {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(29, 38, 113, 0.6),
+      rgba(121, 85, 96, 0.6)
+    ),
+    url("/images/champagne.jpg");
+}
+
+.main {
+  background-color: rgba(180, 180, 200, 0.8);
+}
+
+.main h2 {
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.main p.lead {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: left;
+}
+p.when {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: left;
+  margin-top: 2rem;
+  text-align: right;
+}
+p.where {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+section#where {
+  background-color: burlywood;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(29, 38, 113, 0.6),
+      rgba(121, 85, 96, 0.6)
+    ),
+    url("/images/ischia.jpg");
+}
+
+.where {
+  background-color: rgba(80, 120, 150, 0.8);
+}
+
+.where p {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+.where h2,
+h3 {
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: left;
+}
+
+section#when {
+  background-color: coral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(29, 38, 113, 0.6),
+      rgba(121, 85, 96, 0.6)
+    ),
+    url("/images/pizza.jpg");
+}
+
+.when {
+  background-color: rgba(150, 80, 80, 0.8);
+}
+
+.when p {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+.when h2,
+.when h3 {
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: left;
+}
+section#rsvp {
+  background-color: darkseagreen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(29, 38, 113, 0.6),
+      rgba(121, 85, 96, 0.6)
+    ),
+    url("/images/wine.jpg");
+}
