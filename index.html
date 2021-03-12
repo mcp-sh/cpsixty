@@ -32,11 +32,11 @@
                     <label for="rsvp_1"><input type="radio" id="rsvp_1" name="rg_rsvp" value="true"> Yes 😀</label>
                     <label for="rsvp_0"><input type="radio" id="rsvp_0" name="rg_rsvp" value="false"> No 😢</label>
                 </div>
-                <input type="text" name="name" id="" value="Name">
+                <input type="text" name="name" id="" value="Name" onfocus="if(this.value == 'Name') { this.value = ''; }">
                 <br />
-                <input type="text" name="email" id="" value="Email">
+                <input type="text" name="email" id="" value="Email" onfocus="if(this.value == 'Email') { this.value = ''; }">
                 <br />
-                <input type="text" name="pax" id="pax" value="Number of people">
+                <input type="text" name="pax" id="pax" value="Number of people" onfocus="if(this.value == 'Number of people') { this.value = ''; }">
                 <br />
                 <input type="submit" value="Go !">
             </form>
