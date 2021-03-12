@@ -29,14 +29,14 @@
             <h2>Are you going to join me?</h2>
             <form name="cp_rsvp" method="POST" data-netlify="true" action="success">
                 <div class="rg">
-                    <label for="rsvp_1"><input type="radio" id="rsvp_1" name="rg_rsvp" > Yes 😀</label>
-                    <label for="rsvp_0"><input type="radio" id="rsvp_0" name="rg_rsvp" > No 😢</label>
+                    <label for="rsvp_1"><input type="radio" id="rsvp_1" name="rg_rsvp" value="true"> Yes 😀</label>
+                    <label for="rsvp_0"><input type="radio" id="rsvp_0" name="rg_rsvp" value="false"> No 😢</label>
                 </div>
                 <input type="text" name="name" id="" value="Name">
                 <br />
                 <input type="text" name="email" id="" value="Email">
                 <br />
-                <input type="text" name="pax" id="" value="Number of people">
+                <input type="text" name="pax" id="pax" value="Number of people">
                 <br />
                 <input type="submit" value="Go !">
             </form>
