@@ -40,34 +40,49 @@ img {
 
 /* END RESET */
 
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.3);
+  text-align: right;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
 section {
   min-height: 100vh;
   width: 100vw;
   margin: 0 auto;
-  padding: 15vh 0;
+  padding: 0;
 }
-
-/* section h1 {
-  font-size: 5rem;
-  color: aliceblue;
-}
-*/
 
 section div {
   margin: 0 auto;
-  padding: 5vh 8vw;
-  max-width: 90vw;
+  padding: 10vh 5vw;
 }
 
 section#main {
   min-height: 100vh;
-  background-color: black;
+  /* background-color: black; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/ischia.jpg");
+  background-image: linear-gradient(
+      rgba(67, 102, 217, 0.5),
+      rgba(67, 102, 217, 0.5)
+    ),
+    url("/images/ischia.jpg");
 }
 section#rsvp {
-  background-color: darkseagreen;
+  /* background-color: darkseagreen; */
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/images/wine.jpg");
@@ -75,11 +90,27 @@ section#rsvp {
 
 .main {
   background-color: rgba(15, 67, 126, 0.8);
-  color: whitesmoke;
+  color: rgb(245, 245, 245);
+  /* color: rgba(40, 53, 94, 1); */
 }
 .details {
   background-color: rgba(255, 255, 255, 0.8);
   color: #222;
+}
+.header {
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.header img {
+  /* width: 80vw;
+  max-width: 900px; */
 }
 
 .main h2 {
@@ -112,15 +143,21 @@ section#rsvp {
   color: salmon;
 }
 
+label {
+  font-size: 1.5rem;
+}
+
 input {
   width: 100%;
-  padding: 1rem 0.5rem;
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #225;
 }
 
 .rg {
-  /* width: 50%; */
   text-align: left;
   padding: 0;
   font-size: 1.5rem;
@@ -133,23 +170,37 @@ input {
 }
 
 .rg label {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 input[type="submit"] {
   margin-top: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
-  color: #222;
+  color: rgb(51, 51, 51);
 }
 
 @media screen and (min-width: 480px) {
+  section {
+    padding: 15vh 0;
+  }
+
   section div {
     margin: 0 auto;
     padding: 8vh 10vw;
     max-width: 80vw;
   }
 
+  .header {
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    color: white;
+  }
   .main h2 {
     font-size: 4.5rem;
     margin-bottom: 2.5rem;

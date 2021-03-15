@@ -9,7 +9,10 @@
 </head>
 <body>
 
-    <section id="main">
+    <nav>
+        <a href="/index.html">EN</a> | <a href="/index-de.html">DE</a>
+    </nav>
+    <!-- <section id="main">
         <div class="main">
             <h2>Zeit zum Feiern !</h2>
             <p class="lead">Ich werde 60 und es ist Zeit dies mit Freunden und Weggefährten zu feiern.</p>
@@ -23,22 +26,51 @@
             <h2>Sant' Angelo</h2>
             <h2>Ischia, Neapel</h2>
         </div>
+    </section> -->
+
+    <section id="main">
+        <div class="header">
+            <h2>Zeit zum Feiern !</h2>
+            <img src="/images/header-english.jpg"  alt="">
+        </div>
+        <div class="details">
+            <p>Wann:</p>
+            <h2>Samstag 3. Juli</h2>
+            <h2>2021</h2>
+            <hr>
+            <p>Wo:</p>
+            <h2>Sant' Angelo</h2>
+            <h2>Ischia, Neapel</h2>
+        </div>
     </section>
+
     <section id="rsvp">
         <div class="main">
             <h2>Wirst du dabei sein ?</h2>
             <form name="cp_rsvp" method="POST" data-netlify="true" action="success">
                 <div class="rg">
-                    <label for="rsvp_1"><input type="radio" id="rsvp_1" name="rg_rsvp" value="true"> Ja 😀</label>
-                    <label for="rsvp_0"><input type="radio" id="rsvp_0" name="rg_rsvp" value="false"> Nein 😢</label>
+                    <label >
+                        <input type="radio" id="rsvp_1" name="rg_rsvp" value="true">
+                        Ja, ich will kommen
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" id="rsvp_0" name="rg_rsvp" value="false">
+                        Nein, leider nicht
+                    </label>
                 </div>
 
-                <input type="text" name="name" id="" value="Name" onfocus="if(this.value == 'Name') { this.value = ''; }">
-                <br />
-                <input type="text" name="email" id="" value="Email" onfocus="if(this.value == 'Email') { this.value = ''; }">
-                <br />
-                <input type="text" name="pax" class="pax" id="Pax" value="Anzahl der Personen" onfocus="if(this.value == 'Anzahl der Personen') { this.value = ''; }">
-                <br />
+                <label>
+                    Name: <input type="text" name="name" id="" value="Name">
+                </label>
+
+                <label>
+                    Email: <input type="text" name="email" id="" value="Email">
+                </label>
+
+                <label>
+                    Anzahl der Personen: <input type="text" name="pax" class="pax" id="Pax" value="Anzahl der Personen">
+                </label>
                 <input type="submit" value="Abschicken">
             </form>
         </div>
