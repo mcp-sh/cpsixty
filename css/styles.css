@@ -28,11 +28,6 @@ ul {
   font-weight: normal;
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -62,18 +57,15 @@ nav a {
 section {
   min-height: 100vh;
   width: 100vw;
-  margin: 0 auto;
-  padding: 0;
 }
 
 section div {
   margin: 0 auto;
-  padding: 10vh 5vw;
+  padding: 10vh 8vw;
 }
 
 section#main {
   min-height: 100vh;
-  /* background-color: black; */
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(
@@ -83,7 +75,6 @@ section#main {
     url("/images/ischia.jpg");
 }
 section#rsvp {
-  /* background-color: darkseagreen; */
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +84,6 @@ section#rsvp {
 .main {
   background-color: rgba(15, 67, 126, 0.8);
   color: rgb(245, 245, 245);
-  /* color: rgba(40, 53, 94, 1); */
 }
 .details {
   background-color: rgba(255, 255, 255, 0.8);
@@ -110,11 +100,6 @@ section#rsvp {
   color: white;
 }
 
-.header img {
-  /* width: 80vw;
-  max-width: 900px; */
-}
-
 .main h2 {
   font-size: 3.5rem;
   font-weight: lighter;
@@ -122,19 +107,13 @@ section#rsvp {
   margin-bottom: 2rem;
 }
 
-.main .lead {
-  font-size: 2.5rem;
-  font-weight: lighter;
-  text-align: left;
-}
-
-.details h2 {
-  font-size: 2.5rem;
-  font-weight: lighter;
-  text-align: left;
-}
 .details p {
   font-size: 2rem;
+  font-weight: lighter;
+  text-align: left;
+}
+.details h2 {
+  font-size: 2.5rem;
   font-weight: lighter;
   text-align: left;
 }
@@ -168,15 +147,10 @@ input {
 
 .rg input {
   width: 30px;
-  font-size: 1.5rem;
-}
-
-.rg label {
-  /* margin-right: 2rem; */
 }
 
 input[type="submit"] {
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   color: rgb(51, 51, 51);
@@ -193,10 +167,6 @@ input[type="submit"] {
     max-width: 80vw;
   }
 
-  .header {
-    text-align: center;
-  }
-
   .header h2 {
     font-size: 5rem;
     font-weight: lighter;
@@ -207,11 +177,6 @@ input[type="submit"] {
     font-size: 4.5rem;
     margin-bottom: 2.5rem;
   }
-
-  .main .lead {
-    font-size: 3rem;
-  }
-
   .details h2 {
     font-size: 4rem;
   }
